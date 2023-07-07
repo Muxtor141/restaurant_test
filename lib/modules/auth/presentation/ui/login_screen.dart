@@ -35,7 +35,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) => Scaffold(
         appBar: AppBar(
-          elevation: 0,
+          elevation: 0,centerTitle: true,
           title: const Text(
             'Авторизация',
             style: TextStyle(
