@@ -58,19 +58,19 @@ class _NavigationScreenState extends State<NavigationScreen>
   @override
   Widget build(BuildContext context) {
     labels = [
-      NavBar(title: 'Lenta',
+      NavBar(title: 'Лента',
         id: 0,
         icon: AppIcons.navLenta,
       ),
-      NavBar(title: 'Map',
+      NavBar(title: 'Карта',
         id: 1,
         icon: AppIcons.navMap,
       ),
-      NavBar(title: 'Favourites',
+      NavBar(title: 'Избранные',
         id: 2,
         icon: AppIcons.navFavourite,
       ),
-      NavBar(title: 'Profile',
+      NavBar(title: 'Профиль',
         id: 3,
         icon: AppIcons.profileCircle,
       ),
@@ -99,11 +99,9 @@ class _NavigationScreenState extends State<NavigationScreen>
           child: Scaffold(
             resizeToAvoidBottomInset: true,
             bottomNavigationBar: Container(
-              height: 43 + MediaQuery.of(context).padding.bottom,
+              height: 43 + MediaQuery.of(context).padding.bottom+(MediaQuery.of(context).padding.bottom==0?30:0),
               decoration: BoxDecoration(
                 color: white,
-                // border: Border(
-                //     top: BorderSide(color: Theme.of(context).dividerColor)),
                 boxShadow: const [],
               ),
               child: TabBar(
